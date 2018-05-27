@@ -1,0 +1,7 @@
+<launch> 
+  <node pkg="otto_von_robot" type="otto_enc_odom.py" name="otto_enc_odom" />
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization"> 
+    <rosparam command="load" file="$(find otto_von_robot)/config/robot_localization.yaml" />
+  </node>
+</launch>
+

@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_gps"     args="0.09 0 0.75 0 0 0 base_link base_gps "/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_christa" args="-0.23 0 0.6 0 0 0 base_link base_imu "/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_bosch"   args="-0.45 0 0.6 0 0 0 base_link base_bosch"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_lidar"   args="0.23 0 0.6 0 0 0 base_link laser "/>
+</launch>
